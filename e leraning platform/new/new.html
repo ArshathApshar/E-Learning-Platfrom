@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/javascript/javascript.js"></script>
+
+    <style>
+        div{
+            background-color: rgb(122, 120, 120);
+            color: rgb(10, 10, 10);
+        }
+        iframe{
+            width: 1000px;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div id="editor"></div>
+    <button onclick="updatePreview()">Run</button>
+    <iframe id="preview"></iframe>
+
+    <script>
+        var editor = CodeMirror(document.getElementById("editor"), {
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "default",
+        });
+
+        function updatePreview() {
+            var previewFrame = document.getElementById('preview');
+            var previewContent = editor.getValue();
+            var previewDocument = previewFrame.contentDocument || previewFrame.contentWindow.document;
+
+            previewDocument.open();
+            previewDocument.write(previewContent);
+            previewDocument.close();
+        }
+    </script>
+</body>
+</html>

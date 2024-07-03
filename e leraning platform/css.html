@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Arshath Webpage</title>
+   
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="">CSS</a>
+        </div>
+        <ul class="new">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#intro">INTRO</a></li>
+            <li><a href="#colours">COLOURS</a></li>
+            <li><a href="#borders">BORDERS</a></li>
+            <li><a href="#text">TEXT</a></li>
+            <li><a href="#padding">PADDING</a></li>
+            <li><a href="#margin">MARGIN</a></li>
+     </ul>
+
+    </nav>
+    <div class="nav2">
+            <ul> 
+            <li><a href="python1.html">PYTHON</a></li>
+            <li><a href="sql.html">SQL</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="arshathproject.html">BACK TO HOME</a></li>
+            </ul>
+    </div>
+<div id="content">
+        <div id="home">
+            <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">CSS Tutorial</h1>
+CSS is an acronym for Cascading Style Sheet and it was created by HÃƒÂ¥kon Wium Lie in 1996 for the web developers to change the layout, colors, and fonts of their websites.  <br>
+
+CSS is a style sheet or presentational language that is used to layout, format, and style documents that are written in HTML to make them look beautiful. CSS is generally used with HTML to change the style of web pages and user interfaces. You can use CSS to change the color, backgrounds, borders, paddings, margins, fonts, icons, position and various other properties of HTML elements in a web document. <br>
+
+This tutorial covers all the versions of CSS including CSS1, CSS2 and CSS3, and gives a complete understanding of CSS, starting from its basics to advanced concepts. This tutorial will teach you about CSS Box Model, Selectors, The cascade, Color, Sizing Units, Layout, Flexbox, Grid, Pseudo-elements and Pseudo-classes, Borders, Shadows, Focus, Functions, Gradients, Animations, Filters, Lists, Transitions, Overflow, Backgrounds, Text and typography. <br>
+
+<h4>CSS Examples</h4>
+<div id="css_home_box">
+This tutorial teaches you every CSS concept with the help of suitable examples which you can execute in your browser itself without a need of any external HTML editor. <br>
+
+Below HTML & CSS code is editable where you can change the value of the code. You can click the icon run button to see the output of the following code. Try to change the values of width, font-size and padding etc and then run it again to see the modified result. <br></div>
+<img src="css image/home img.jpg.png" alt="img">
+
+        </div>
+            <div id="intro">
+                <H1 style="text-align: center;text-decoration: underline;font-size: 30px;">CSS INTRO</H1>
+               <h1>What is CSS?</h1>
+Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to transform the presentation of a Web Pages as well as many ostensibly nonweb environments. <br>
+
+CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are used, layout designs,variations in display for different devices and screen sizes as well as a variety of other effects. <br>
+
+CSS is easy to learn and understand but it provides powerful control over the presentation of an HTML document. Most commonly, CSS is combined with the markup languages HTML or XHTML. <br>
+
+Strictly speaking CSS is not a programming language but it does require abstract thought. It is also not purely a design tool, but it does require some creativity. <br>
+<h2>Where do we use CSS?</h2>
+CSS is being used extensively in web and non web based applications : <br>
+
+All modern websites make use of CSS to beautify their web pages. <br>
+Embedded-device displays often use CSS to style their user interfaces.  <br>
+RSS clients also let you apply CSS to feeds and feed entries.  <br>
+Instant message clients also use CSS to format chat windows.  <br>
+Aspects of CSS can be found in the syntax used by JavaScript and its frameworks, so we can say CSS is everywhere!  <br>
+History of CSS
+Cascading Style Sheets level 1 (CSS1) came out of W3C as a recommendation in December 1996. This version describes the CSS language as well as a simple visual formatting model for all the HTML tags.  <br>
+
+CSS2 became a W3C recommendation in May 1998 and builds on top of CSS1. This version adds support for media-specific style sheets e.g. printers and aural devices, downloadable fonts, element positioning and tables.  <br>
+
+CSS3 became a W3C recommendation in June 2012 and builds on older versions CSS. it has divided into documentations called as Modules and here each module having new extension features defined in CSS2.  <br>
+
+
+            </div>
+            <div id="colours">
+                <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">CSS Colors</h1>
+CSS uses color values to specify a color. Typically, these are used to set a color either for the foreground of an element (i.e. its text) or else for the background of the element. They can also be used to affect the color of borders and other decorative effects.
+
+Syntax
+CSS allows to set colors of an element in a variety of ways. Let's check all the possible available syntax to set the height of an element.
+
+Named Colors
+A CSS named color is the name of a color, such as red, blue, black, or lightseagreen.
+<div id="colour1">
+color: blue; <br>
+border: 1px solid red;<br>
+background: aliceblue;</div>
+<div id="colour1">
+RGB Hexadecimal Colors<br>
+color: #f09;<br>
+border: 1px solid #ff0099;
+background: #eee;</div>
+<div id="colour1">
+RGB (Red, Green, Blue) Colors<br>
+color: rgb(255 0 153); <br>
+border: 1px solid rgb(255 0 153); <br>
+background: rgb(255 0 153 / 80%);</div>
+<div id="colour1">
+HSL (Hue, Saturation, Lightness) Colors<br>
+color: hsl(150 30% 60%); <br>
+border: 1px solid hsl(150 30% 60%); <br>
+background: hsl(150 30% 60% / 0.8);</div>
+<div id="colour1">
+HWB (Hue, Whiteness, Blackness) Colors<br>
+color: hwb(12 50% 0%);  <br>
+border: 1px solid hwb(12 50% 0%); <br>
+background: hwb(194 0% 0% / 0.5);</div>
+<div id="colour1">
+LAB (Lightness, A-axis, B-axis) Colors<br>
+color: lab(50% 40 59.5);<br>
+border: 1px solid lab(50% 40 59.5);<br>
+background: lab(50% 40 59.5 / 0.5);</div>
+<div id="colour1">
+LCH (Lightness, Chroma, Hue) Colors<br>
+color: lch(52.2% 72.2 50);<br>
+border: 1px solid lch(52.2% 72.2 50);<br>
+background: lch(52.2% 72.2 50 / 0.5);<br>
+</div>
+<div id="colour1">
+Oklab (Lightness, A-axis, B-axis) Colors<br>
+color: oklab(59% 0.1 0.1);<br>
+border: 1px solid oklab(59% 0.1 0.1);<br>
+background: oklab(59% 0.1 0.1 / 0.5);<br>
+</div>
+<div id="colour1">
+Oklch (Lightness, Chroma, Hue) Colors<br>
+color: oklch(60% 0.15 50);<br>
+border: 1px solid oklch(60% 0.15 50);<br>
+background: oklch(60% 0.15 50 / 0.5);<br>
+</div>
+These formats are explained in more detail in the following sections − <br>
+
+<b>CSS Colors - Keyword</b> <br>
+CSS supports the color names to be directly passed to the property background-color and color. 140 standard color names are supported by CSS.
+            </div>
+            <div id="borders">
+                <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">CSS Borders</h1>
+The CSS border properties allow you to specify how the border of the box representing an element should look. There are three properties of a border you can change −
+
+border-style - Specifies whether a border should be solid, dashed line, double line, or one of the other possible values.
+
+border-color - Specifies the color of a border. The default value is the foreground color of the element and if element is blank, then color of the parent element
+
+border-width - Specifies the width of a border. The default value is medium.
+
+Now, we will see how to use these properties with examples.
+<div id="border_css">
+<h3>CSS Border Style</h3> 
+The border-style property specifies what kind of border to display. Following values can be passed to border-style:<br>
+
+Value	Description<br>
+none	No border<br>
+hidden	A hidden border, same as 'none' except for table elements<br>
+dotted	A series of dots<br>
+dashes	A series of short dashes<br>
+solid	A single solid line<br>
+double	Two parallel lines with a small gap between them<br>
+groove	A border that appears to be carved into the page<br>
+ridge	A border that appears to be slightly raised above the page<br>
+inset	A border that appears embedded into the page<br>
+outset	A border that appears slightly raised out of the page<br>
+The border-style property can have upto four values in one statement where we can specify the border style for top, right, bottom and left border.</div>
+
+Example <br>
+The following example to show border-style properly with different values − <br>
+<img src="css image/border.png" alt="img">
+CSS Border Style - Single Side <br>
+CSS provided following four properties to control the style of each single-side of an element. <br>
+<div id="border_css">
+border-top-style <br>
+border-right-style <br>
+border-bottom-style <br>
+border-left-style </div>
+            </div>
+            <div id="text">
+                <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">Text Formatting using CSS</h1>
+                <div id="text_box">
+                CSS provides a number of properties to format text in beautiful way. This tutorial demonstrates how to format text using CSS properties. Following properties provided by CSS can be used to format the text:<br>
+                
+                color: Sets the color of the text.<br>
+                
+                text-align Sets the alignment of the text.<br>
+                
+                text-align-last: Sets the alignment of the last line of a block of text.<br>
+                
+                direction: Sets the direction of the text of an element.<br>
+                
+                text-indent: Sets the indentation of the first line of the text.<br>
+                
+                letter-spacing: Specifies the space between the letters or characters that make up a word or text.<br>
+                
+                word-spacing: Specifies the space between the words in a text.<br>
+                
+                white-space: Controls the white space flow inside the text in an element.<br>
+                
+                text-decoration: Adds an underline, overline, and strikethrough over a piece of text.<br>
+                
+                text-decoration-skip: Determines what part of the content of the element, where text decoration is affecting, needs to be skipped.<br>
+                
+                text-decoration-skip-ink: Specifies how the overline and underline text decoration lines are drawn around glyph ascenders and descenders.<br>
+                
+                text-transform: Converts text to uppercase or lowercase letters.<br>
+                
+                text-emphasis: Applies emphasis marks to text (except spaces and control characters).<br>
+                
+                text-shadow: Adds shadow to the text.<br>
+                
+                line-break: Controls how to set the rule for a line break.<br>
+                
+                word-break: Controls how to set the rule for a word break.<br> </div>
+                
+               <h2> CSS - Setting Text Color</h2>
+                Altering the color of the text can add visual interest or align with a specific design scheme.<br>
+                
+                The CSS color property is used to set the color of the text. The possible values for this property are as follows:<br>
+                
+                Color Name: Example = red, blue, green.<br>
+                
+                Hexadecimal value: Example = #ff00ff.<br>
+                
+                RGB value: Example = rgb(125, 255, 0).<br>
+                
+                Example <br>
+                Here is an example: <br>
+                <img src="css image/text.png" alt="">
+                CSS - Setting Text Alignment <br>
+                The position or placement of text on a page is called its alignment. The text is aligned based on the left and right margins of the page.<br>
+                
+                The CSS property text-align defines the alignment of the text on a web page. The text-align property is used to set the horizontal alignment of the text.<br>
+                
+                Following are the possible values which can be used to set text-align property.<br>
+                
+                start: Same as left, if direction is LTR and right if direction is RTL.<br>
+                
+                end: Same as right, if direction is LTR and left if direction is RTL.<br>
+                <div id="text_box">
+                left: Aligned with the left-margin.<br>
+                
+                right: Aligned with the right-margin.<br>
+                
+                center: Aligned at the center of the page.<br>
+                
+                justify: Aligned with both the margins.<br>
+                
+                justify-all: Same as justify, making the last line justified as well.<br>
+                
+                match-parent: Similar to inherit. Values of start and right taken from parent's value and replaced by left and right.</div>
+            </div>
+            <div id="padding">
+               <h1 style="text-align: center;text-decoration: underline;font-size: 30px;"> CSS Padding</h1>
+                    The CSS padding property is a shorthand property to set the padding space around an HTML element. Let us see a simple example to set padding with a single length value, which is applied equally to all four padding sides. Here we add 5px padding on h2 element : <br>
+                        <img src="css image/padding 1.png" alt="img" >
+                        You can set padding using any units, whether in pixels, inches, millimeters, or ems. The default value for margin is 0 (zero), so if you don’t set a padding value then no padding should appear around the element. To set a padding of quarter inche around h2 element, above code will be written as follows: <br>
+                        <img src="css image/padding 2.png" alt="">
+                        CSS Padding vs No-padding <br>
+                        Consider the following example where first h2 element is having a padding around it where as next h2 element does not have any padding around it. Check out the difference by seeing its output: <br>
+                        <img src="css image/padding3.png" alt="">
+                        CSS Paddings - Single-side Properties
+                        CSS provides four separate properties to set padding for top, right, bottom, and left for an element. These properties are:
+                        <div id="padding_box">
+                        padding-top <br>
+                        padding-right<br>
+                        padding-bottom<br>
+                        padding-left</div>
+                            </div>
+            <div id="margin">
+                <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">CSS Margin</h1>
+                <h2>The CSS margin property is a shorthand property to set the margin area around an HTML element. Consider you want to set a quarter-inch margin on h1 elements then following is the syntax:</h2>
+              <img src="css image/margin1.png" alt="">
+                You can set margin using any units, whether in pixels, inches, millimeters, or ems. The default value for margin is 0 (zero), so if you don’t set a margin value then no margin should appear around the element. To set a margin of 20 pixels around h1 element, above code will be written as follows: <br>
+                
+                <img src="css image/margin2.png" alt="">
+                CSS Margins - Single-Side Properties <br>
+                CSS provides four separate properties to set margins for left, right, top and bottom for an element. <br>
+                
+                margin-bottom <br>
+                margin-top <br>
+                margin-left <br>
+                margin-right <br>
+                Following example demonstrates how we can set different margins around h1 elements: <br>
+             <img src="css image/margin3.png" alt="">
+                CSS Margins - Shorthand Property <br>
+                You can use margin property to set all the sides margin at different values. Following is the syntax to use margin as shorthand property: <br>
+                
+                 <h1>h1 {margin: top right bottom left} </h1>
+                
+            </div>
+            <div id="progress bar">
+
+            </div>
+
+    </div>
+    </body>
+    </html>

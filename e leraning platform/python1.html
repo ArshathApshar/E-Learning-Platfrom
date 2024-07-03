@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="python.css">
+    <title>Arshath Webpage</title>
+   
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="">Python</a>
+        </div>
+        <ul class="new">
+            <li><a href="#intro">INTRO</a></li>
+            <li><a href="#syntax">SYNTAX</a></li>
+            <li><a href="#variable">VARIABLES</a></li>
+            <li><a href="#data_types">DATA TYPES</a></li>
+            <li><a href="#operators">OPERATERS</a></li>
+            <li><a href="#list">LIST</a></li>
+            <li><a href="#tuple">TUPLES</a></li>
+            <li><a href="#set">SETS</a></li>
+            <li><a href="#dictionaries">DICTIONARIES</a></li>
+            <li><a href="#if else">IF ELSE</a></li>   
+            <li><a href="#quiz">quiz</a></li> 
+     </ul>
+
+    </nav>
+    <div class="nav2">
+            <ul> 
+            <li><a href="#PYTHON">PYTHON</a></li>
+            <li><a href="sql.html">SQL</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li style="margin-left: 350px;"><a href="arshathproject.html">BACK TO HOME</a></li>
+            </ul>
+    </div>
+<div id="content">
+    <div id="intro">
+        <!-- <a href="PYTHON"></a> -->
+        <h1 style="text-align: center;text-decoration: underline;font-size: 30px;"><b>Python Tutorial</b></h1>
+        <h3><i>learn python</i></h3>
+        <p>Python is a popular programming language. <br>
+            Python can be used on a server to create web applications.</p>
+         
+         <p>
+            <b>What is Python?</b><br>
+    Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+    
+    It is used for:
+    
+    web development (server-side),
+    software development,
+    mathematics,
+    system scripting.
+    What can Python do?
+    Python can be used on a server to create web applications.
+    Python can be used alongside software to create workflows.
+    Python can connect to database systems. It can also read and modify files.
+    Python can be used to handle big data and perform complex mathematics.
+    Python can be used for rapid prototyping, or for production-ready software development.
+    Why Python?
+    Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+    Python has a simple syntax similar to the English language.
+    Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+    Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+    Python can be treated in a procedural way, an object-oriented way or a functional way.
+    Good to know
+    The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.
+    In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.
+    Python Syntax compared to other programming languages
+    Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+    Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+    Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+         </p>
+    </div>
+    <!-- syntax -->
+          <div id="syntax">
+            <h1 style="text-align: center;text-decoration: underline;font-size: 30px;"><b>python syntax</b></h1>
+            <p><b>Execute Python Syntax</b> <br>
+            As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p><br>
+                <div id="boxshadow">
+                >>> print("Hello, World!") <br>
+                Hello, World!
+                </div>
+        </div>
+        <div id="variable">
+            <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">Variables</h1>
+            <p>Variables are containers for storing data values.</p>
+            <h3>Creating Variables</h3>
+            <p>Python has no command for declaring a variable. <br>
+                  A variable is created the moment you first assign a value to it.</p>
+                  <div id="var_box">
+                    x = 5
+                    y = "John"
+                    print(x)
+                    print(y) <br>
+                    x = str(3)    x will be '3' <br>
+                    y = int(3)    y will be 3  <br>
+                    z = float(3)  z will be 3.0 <br>
+                  </div>
+        </div>
+
+<!-- data types -->
+<div id="data_types">
+    <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">DATA TYPES <br></h1>
+    <p>
+    
+        <h3>Built-in Data Types</h3>
+In programming, data type is an important concept. <br>
+
+Variables can store data of different types, and different types can do different things. <br>
+
+Python has the following data types built-in by default, in these categories: <br>
+
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	NoneType
+<br>
+<h2>Getting the Data Type</h2>
+You can get the data type of any object by using the type() function:
+
+ExampleGet your own Python Server
+Print the data type of the variable x:
+<div id="data_types_example">
+x = 5
+print(type(x))
+</div>
+<br>
+<h2>Setting the Data Type</h2>
+<h3>In Python, the data type is set when you assign a value to a variable:</h3>
+<div id="dt example">
+Example	Data Type	Try it
+x = "Hello World"	str	<br>
+x = 20	int	<br>
+x = 20.5	float <br>	
+x = 1j	complex	<br>
+x = ["apple", "banana", "cherry"]	list <br>
+x = ("apple", "banana", "cherry")	tuple	<br>
+x = range(6)	range	<br>
+x = {"name" : "John", "age" : 36}	dict <br>	
+x = {"apple", "banana", "cherry"}	set	<br>
+x = frozenset({"apple", "banana", "cherry"})	frozenset <br>	
+x = True	bool <br>
+x = b"Hello"	bytes <br>	
+x = bytearray(5)	bytearray <br>	
+x = memoryview(bytes(5))	memoryview <br>	
+x = None	NoneType	<br>
+</div>
+    </p>
+</div> 
+<!-- operators-->
+<div id="operators">
+    <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">Python Operators</h1>
+Operators are used to perform operations on variables and values. <br>
+
+In the example below, we use the + operator to add together two values:
+
+ExampleGet your own Python Server
+print(10 + 5)
+
+<h2>Python divides the operators in the following groups:</h2>
+<b>
+<div id="operators-2">
+Arithmetic operators <br>
+Assignment operators <br>
+Comparison operators <br>
+Logical operators <br>
+Identity operators <br>
+Membership operators <br>
+Bitwise operators</b>
+</div>
+</div>
+<!-- list -->
+<div id="list">
+    <p>
+        <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">List</h1>
+       <h2> mylist = ["apple", "banana", "cherry"] </h2> <br>
+       <h4>List</h4>
+Lists are used to store multiple items in a single variable. <br>
+
+Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage. <br>
+
+Lists are created using square brackets: <br>
+<div id="list_box_shadow">
+ExampleGet your own Python Server <br>
+Create a List: <br>
+
+thislist = ["apple", "banana", "cherry"] <br>
+print(thislist) <br></div>
+List Items <br>
+List items are ordered, changeable, and allow duplicate values. <br>
+
+List items are indexed, the first item has index [0], the second item has index [1] etc. <br>
+
+<h3>Ordered </h3>
+When we say that lists are ordered, it means that the items have a defined order, and that order will not change. <br>
+
+If you add new items to a list, the new items will be placed at the end of the list. <br>
+
+Note: There are some list methods that will change the order, but in general: the order of the items will not change. <br>
+
+<h1>Changeable</h1> 
+The list is changeable, meaning that we can change, add, and remove items in a list after it has been created. <br>
+
+ <h2>Allow Duplicates</h2>
+Since lists are indexed, lists can have items with the same value: <br>
+<div id="duplicates">
+Example
+Lists allow duplicate values:
+
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)</div>
+<h2>ADVERTISEMENT</h2>
+List Length <br>
+To determine how many items a list has, use the len() function: <br>
+<div id="duplicates-2">
+Example
+Print the number of items in the list:
+
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+List Items - Data Types
+List items can be of any data type: <br>
+
+Example
+String, int and boolean data types:
+
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False] <br>
+</div>
+
+A list can contain different data types: <br>
+
+Example
+A list with strings, integers and boolean values:
+
+list1 = ["abc", 34, True, 40, "male"]
+
+    </p>
+</div> 
+<!-- tuples -->
+ <div id="tuple">
+    <p>
+       <h1 style="text-align: center;text-decoration: underline;font-size: 30px;"> Python Tuples </h1> <br>
+<b>mytuple = ("apple", "banana", "cherry") <br>
+</b>
+Tuple <br>
+Tuples are used to store multiple items in a single variable. <br>
+
+Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage. <br>
+
+A tuple is a collection which is ordered and unchangeable. <br>
+
+Tuples are written with round brackets. <br>
+
+ExampleGet your own Python Server <br>
+<div id="tuple_ex">
+Create a Tuple: <br>
+
+thistuple = ("apple", "banana", "cherry") <br>
+print(thistuple) <br>
+</div>
+Tuple Items  <br>
+Tuple items are ordered, unchangeable, and allow duplicate values. <br>
+
+Tuple items are indexed, the first item has index [0], the second item has index [1] etc. <br>
+
+Ordered <br>
+When we say that tuples are ordered, it means that the items have a defined order, and that order will not change. <br>
+
+Unchangeable <br>
+Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created. <br>
+
+<h3>Allow Duplicates</h3>
+Since tuples are indexed, they can have items with the same value: <br>
+
+Example <br>
+Tuples allow duplicate values: <br>
+
+thistuple = ("apple", "banana", "cherry", "apple", "cherry") <br>
+print(thistuple) <br>
+    </p>
+</div>
+<!-- sets -->
+    <div id="set">
+        <p>
+           <h1 style="text-align: center;text-decoration: underline;font-size: 30px;"> Python Sets</h1>
+myset = {"apple", "banana", "cherry"} <br>
+ <h4>Set</h4>
+Sets are used to store multiple items in a single variable. <br>
+Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage. <br>
+A set is a collection which is unordered, unchangeable*, and unindexed. <br>
+* Note: Set items are unchangeable, but you can remove items and add new items. <br>
+Sets are written with curly brackets. <br>
+ExampleGet your own Python Server <br>
+
+Create a Set: <br>
+thisset = {"apple", "banana", "cherry"} <br>
+print(thisset) <br>
+Note: Sets are unordered, so you cannot be sure in which order the items will appear. <br>
+Set Items <br>
+Set items are unordered, unchangeable, and do not allow duplicate values. <br>
+<h4>Unordered</h4>
+Unordered means that the items in a set do not have a defined order. <br>
+Set items can appear in a different order every time you use them, and cannot be referred to by index or key. <br>
+<h4>Unchangeable</h4>
+Set items are unchangeable, meaning that we cannot change the items after the set has been created. <br>
+Once a set is created, you cannot change its items, but you can remove items and add new items. <br>
+ <h4>Duplicates Not Allowed </h4>
+Sets cannot have two items with the same value. <br>
+Example <br>
+Duplicate values will be ignored: <br>
+thisset = {"apple", "banana", "cherry", "apple"} <br>
+print(thisset) <br>
+Note: The values True and 1 are considered the same value in sets, and are treated as duplicates: <br>
+Example <br>
+True and 1 is considered the same value: <br>
+thisset = {"apple", "banana", "cherry", True, 1, 2} <br>
+print(thisset) <br>
+Note: The values False and 0 are considered the same value in sets, and are treated as duplicates: <br>
+Example <br>
+False and 0 is considered the same value: <br>
+thisset = {"apple", "banana", "cherry", False, True, 0} <br>
+print(thisset) <br>
+        </p>
+    </div>  
+    <!-- dictionaries -->
+     <div id="dictionaries">
+       <h1 style="text-align: center;text-decoration: underline;font-size: 30px;"> Python Dictionaries</h1>
+thisdict = { <br>
+  "brand": "Ford", <br>
+  "model": "Mustang",<br>
+  "year": 1964 <br>
+}  <br>
+<h4>Dictionary</h4>
+<div id="dict-1">
+Dictionaries are used to store data values in key:value pairs. <br>
+A dictionary is a collection which is ordered*, changeable and do not allow duplicates. <br>
+As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered. <br>
+Dictionaries are written with curly brackets, and have keys and values: <br>
+ExampleGet your own Python Server <br>
+Create and print a dictionary: <br>
+thisdict = { <br>
+  "brand": "Ford", <br>
+  "model": "Mustang", <br>
+  "year": 1964 <br>
+} <br>
+print(thisdict) <br>
+Dictionary Items <br>
+Dictionary items are ordered, changeable, and does not allow duplicates. <br>
+Dictionary items are presented in key:value pairs, and can be referred to by using the key name. <br>
+Example <br>
+Print the "brand" value of the dictionary: <br>
+thisdict = { <br>
+  "brand": "Ford", <br>
+  "model": "Mustang", <br>
+  "year": 1964 <br>
+} <br>
+print(thisdict["brand"]) <br>
+Ordered or Unordered? <br>
+As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered. <br>
+When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change. <br>
+Unordered means that the items does not have a defined order, you cannot refer to an item by using an index. <br>
+Changeable <br>
+Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created. <br> </div>
+
+<h1>Duplicates Not Allowed</h1> <br>
+Dictionaries cannot have two items with the same key: <br>
+
+<h3>Example </h3> <br>
+Duplicate values will overwrite existing values:
+
+thisdict = { <br>
+  "brand": "Ford", <br>
+  "model": "Mustang", <br>
+  "year": 1964,<br> 
+  "year": 2020 <br>
+} <br>
+print(thisdict) <br>
+    
+    <!-- if else -->
+     <div id="if else">
+        <p>
+          <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">  Python If ... Else </h1>
+<h2>Python Conditions and If statements  </h2> <br>
+Python supports the usual logical conditions from mathematics: <br>
+
+Equals: a == b <br>
+Not Equals: a != b <br>
+Less than: a < b <br>
+Less than or equal to: a <= b  
+Greater than: a > b <br>
+Greater than or equal to: a >= b <br>
+These conditions can be used in several ways, most commonly in "if statements" and loops. <br>
+An "if statement" is written by using the if keyword. <br>
+
+<h3>ExampleGet your own Python Server</h3>
+<div id="if">
+<h2>If statement:</h2>
+a = 33 <br>
+b = 200 <br>
+if b > a: <br>
+  print("b is greater than a") <br>
+        </p></div>
+
+    </div>
+</div> 
+<div id="quiz">
+    
+
+</div>
+    </body>
+    </html>

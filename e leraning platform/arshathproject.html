@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arshath Webpage</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#arshathproject.html">Arshath Full stack</a>
+            
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="course.html">courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Quiz</a></li>
+        </ul>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    <!-- home -->
+    
+        <div id="home">
+            <h1><b>Home</b></h1>
+            <p id="home1"><b>Full stack development is a term used to describe the process of developing a complete web application from start to finish. A full-stack developer is responsible for all aspects of the web application including the front-end (client-side), back-end (server-side), and database. <br>
+        
+                The term “full stack” is often used to describe web development frameworks that include all the necessary components to build a complete web application. </b></p>
+            
+        </div>
+</body>
+<script>
+    const menu = document.querySelector('.menu')
+    const menuList = document.querySelector('nav ul')
+    menu.addEventListener('click',()=>{
+        menuList.classList.toggle('showmenu')
+    })
+</script>
+</html>

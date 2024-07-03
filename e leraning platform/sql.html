@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sql.css">
+    <title>Arshath Webpage</title>
+   
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="">SQL</a>
+        </div>
+        <ul class="new">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#intro">INTRO</a></li>
+            <li><a href="#syntax">SYNTAX</a></li>
+            <li><a href="#where">WHERE</a></li>
+            <li><a href="#insert_into">INSERT INTO</a></li>
+            <li><a href="#update">UPDATE</a></li>
+            <li><a href="#join">JOIN</a></li>
+            <li><a href="#inner_join">INNER JOIN</a></li>
+            <li><a href="#left_inner_join">LEFT JOIN</a></li>
+            <li><a href="#right_join">RIGHT JOIN</a></li>  
+     </ul>
+
+    </nav>
+    <div class="nav2">
+            <ul> 
+            <li><a href="python1.html">PYTHON</a></li>
+            <li><a href="sql.html">SQL</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="CSS.HTML">CSS</a></li>
+            <li style="margin-left: 350px;"><a href="arshathproject.html">BACK TO HOME</a></li>
+            </ul>
+    </div>
+    <div id="content">
+        <!-- home -->
+            <div id="home">
+               <h1 style="text-align: center;text-decoration: underline;font-size: 30px;"> SQL Tutorial</h1> 
+<h2>SQL is a standard language for storing, manipulating and retrieving data in databases.</h2> <br>
+Our SQL tutorial will teach you how to use SQL in: MySQL, SQL Server, MS Access, Oracle, Sybase, Informix, Postgres, and other database systems. <br>
+Examples in Each Chapter <br>
+With our online SQL editor, you can edit the SQL statements, and click on a button to view the result. <br>
+
+ExampleGet your own SQL Server  <br>
+SELECT * FROM Customers;  <br>
+<div id="home_box">
+<h3>SQL Exercises</h3>
+Test Yourself With Exercises <br>
+Exercise: <br>
+Insert the missing statement to get all the columns from the Customers table. <br>
+
+ * FROM Customers;
+</div>
+
+            </div>
+            <!-- intro -->
+<div id="intro">
+    <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">Introduction to SQL</h1>
+<h1>SQL is a standard language for accessing and manipulating databases.</h1>
+
+<h3>What is SQL?</h3>
+SQL stands for Structured Query Language <br>
+SQL lets you access and manipulate databases <br>
+SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987 <br>
+<h3>What Can SQL do? </h3>
+SQL can execute queries against a database <br>
+SQL can retrieve data from a database <br>
+SQL can insert records in a database <br>
+SQL can update records in a database <br>
+SQL can delete records from a database <br>
+SQL can create new databases <br>
+SQL can create new tables in a database <br>
+SQL can create stored procedures in a database <br>
+SQL can create views in a database <br>
+SQL can set permissions on tables, procedures, and views <br>
+SQL is a Standard - BUT.... <br>
+Although SQL is an ANSI/ISO standard, there are different versions of the SQL language. <br>
+However, to be compliant with the ANSI standard, they all support at least the major commands (such as SELECT, UPDATE, DELETE, INSERT, WHERE) in a similar manner. <br>
+Note: Most of the SQL database programs also have their own proprietary extensions in addition to the SQL standard!
+Using SQL in Your Web Site <br>
+To build a web site that shows data from a database, you will need: <br>
+An RDBMS database program (i.e. MS Access, SQL Server, MySQL) <br>
+To use a server-side scripting language, like PHP or ASP <br>
+To use SQL to get the data you want <br>
+To use HTML / CSS to style the page <br>
+</div>
+<!-- syntax -->
+<div id="syntax">
+    <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">SQL Syntax</h1>
+    <h3>SQL Statements</h3>
+    Most of the actions you need to perform on a database are done with SQL statements. <br>
+    SQL statements consists of keywords that are easy to understand. <br>
+    The following SQL statement returns all records from a table named "Customers": <br>
+    <div id="syntax_box">
+    ExampleGet your own SQL Server <br>
+    Select all records from the Customers table: <br>
+    
+    SELECT * FROM Customers; <br>
+    </div>
+</div>
+<!-- where -->
+<div id="where">
+    <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">SQL WHERE Clause</h1>
+<h2>The SQL WHERE Clause</h2>
+<h3>The WHERE clause is used to filter records.</h3>
+
+It is used to extract only those records that fulfill a specified condition. <br>
+
+<b>ExampleGet your own SQL Server </b> <br>
+<div id="where_box">
+Select all customers from Mexico: <br>
+
+SELECT * FROM Customers <br>
+WHERE Country='Mexico'; <br>
+Syntax <br>
+SELECT column1, column2, ... <br>
+FROM table_name <br>
+WHERE condition; <br>
+
+Note: The WHERE clause is not only used in SELECT statements, it is also used in UPDATE, DELETE, etc.! <br>
+</div>
+</div>
+<!-- insert into -->
+<div id="insert_into">
+    <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">SQL INSERT INTO Statement</h1>
+    <h2>The SQL INSERT INTO Statement </h2>
+    <h3>The INSERT INTO statement is used to insert new records in a table.</h3>
+    
+   <h1> INSERT INTO Syntax</h1>
+    It is possible to write the INSERT INTO statement in two ways: <br>
+    
+    1. Specify both the column names and the values to be inserted: <br>
+    
+    INSERT INTO table_name (column1, column2, column3, ...) <br>
+    VALUES (value1, value2, value3, ...); <br>
+    
+    2. If you are adding values for all the columns of the table, you do not need to specify the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table. Here, the INSERT INTO syntax would be as follows: <br>
+    
+    INSERT INTO table_name <br>
+    VALUES (value1, value2, value3, ...); <br>
+    
+</div>
+<!-- update -->
+<div id="update">
+    <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">SQL UPDATE Statement</h1>
+    <h2>The SQL UPDATE Statement</h2>
+    <b>The UPDATE statement is used to modify the existing records in a table.</b>
+    <div id="update_box">
+    UPDATE Syntax <br>
+    UPDATE table_name <br>
+    SET column1 = value1, column2 = value2, ... <br>
+    WHERE condition; 
+    </div>
+</div>
+<!-- join -->
+<div id="join">
+
+    <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">SQL Joins</h1>
+    <h3>SQL JOIN</h3>
+    A JOIN clause is used to combine rows from two or more tables, based on a related column between them. <br>
+    
+    Let's look at a selection from the "Orders" table: <br>
+    
+    OrderID	CustomerID	OrderDate <br>
+    10308	2	1996-09-18 <br>
+    10309	37	1996-09-19 <br>
+    10310	77	1996-09-20 <br>
+    <h2>Then, look at a selection from the "Customers" table:</h2>
+    
+    CustomerID	CustomerName	ContactName	Country <br>
+    1	Alfreds Futterkiste	Maria Anders	Germany <br>
+    2	Ana Trujillo Emparedados y helados	Ana Trujillo	Mexico <br>
+    3	Antonio Moreno Taquería	Antonio Moreno	Mexico <br>
+    Notice that the "CustomerID" column in the "Orders" table refers to the "CustomerID" in the "Customers" table. The relationship between the two tables above is the "CustomerID" column. <br>
+    
+    Then, we can create the following SQL statement (that contains an INNER JOIN), that selects records that have matching values in both tables: <br>
+    <div id="join_box">
+    <b>ExampleGet your own SQL Server</b> <br>
+    SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate <br>
+    FROM Orders <br>
+    INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+</div>
+</div>
+<!-- inner join -->
+<div id="inner_join">
+   <h1 style="text-align: center;text-decoration: underline;font-size: 30px;"> SQL INNER JOIN</h1>
+<h2>INNER JOIN</h2>
+The INNER JOIN keyword selects records that have matching values in both tables. <br>
+<div id="inner_first_box">
+Let's look at a selection of the Products table: <br>
+
+ProductID	ProductName	CategoryID	Price <br>
+1	Chais	1	18 <br>
+2	Chang	1	19 <br>
+3	Aniseed Syrup	2	10 <br> </div>
+ <h2>And a selection of the Categories table:</h2>
+
+CategoryID	CategoryName	Description <br>
+1	Beverages	Soft drinks, coffees, teas, beers, and ales <br>
+2	Condiments	Sweet and savory sauces, relishes, spreads, and seasonings <br>
+3	Confections	Desserts, candies, and sweet breads <br>
+<b>We will join the Products table with the Categories table, by using the CategoryID field from both tables: </b> <br>
+<div id="inner_secondz_box">
+<h4>ExampleGet your own SQL Server</h4> <br>
+Join Products and Categories with the INNER JOIN keyword: <br>
+
+SELECT ProductID, ProductName, CategoryName <br>
+FROM Products <br>
+INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID; <br>
+<h4>SQL INNER JOIN</h4>
+
+<h2>Note: The INNER JOIN keyword returns only rows with a match in both tables. Which means that if you have a product with no CategoryID, or with a CategoryID that is not present in the Categories table, that record would not be returned in the result.</div></h2>
+</div>
+<!-- left join -->
+<div id="left_inner_join">
+    <h1 style="text-align: center;text-decoration: underline;font-size: 30px;">SQL LEFT JOIN Keyword</h1>
+<b>SQL LEFT JOIN Keyword <br>
+The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table (table2). The result is 0 records from the right side, if there is no match.</b>
+<div id="left_box">
+LEFT JOIN Syntax <br>
+SELECT column_name(s) <br>
+FROM table1 <br>
+LEFT JOIN table2 <br> 
+ON table1.column_name = table2.column_name; <br>
+<b>Note: In some databases LEFT JOIN is called LEFT OUTER JOIN. </b>
+</div>
+</div>
+<!-- right join -->
+<div id="right_join">
+   <h1 style="text-align: center;text-decoration: underline;font-size: 30px;"> SQL RIGHT JOIN Keyword</h1>
+<b>SQL RIGHT JOIN Keyword <br>
+The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records from the left table (table1). The result is 0 records from the left side, if there is no match.</b>
+<div id="right_box">
+
+
+RIGHT JOIN Syntax <br>
+SELECT column_name(s) <br>
+FROM table1 <br>
+RIGHT JOIN table2 <br>
+ON table1.column_name = table2.column_name; <br>
+<b>Note: In some databases RIGHT JOIN is called RIGHT OUTER JOIN. </b>
+</div>
+</div>
+
+
+    </div>
+    </body>
+</html>

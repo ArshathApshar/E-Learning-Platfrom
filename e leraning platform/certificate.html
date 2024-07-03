@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: #f4f4f4;
+            background-image: url(home\ background\ image.jpg);
+            background-repeat: no-repeat;
+          background-size: cover;
+            
+        }
+
+        #certificateForm {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 200px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #certificateOutput {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="certificateForm">
+    
+    <h2>Certificate Generator</h2>
+    <form id="form">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required>
+
+        <label for="completionDate">Completion Date:</label>
+        <input type="date" id="completionDate" name="completionDate" required>
+
+        <button type="button" onclick="generateCertificate()">Generate Certificate</button>
+    </form>
+
+    <div id="certificateOutput">
+        <h3>Certificate of Completion</h3>
+        <p>This is to certify that</p>
+        <p id="outputName"></p>
+        <p>has successfully completed the course</p>
+        <p id="outputCourse"></p>
+        <p>on <span id="outputDate"></span>.</p>
+
+        <button id="downloadBtn">Download Certificate</button>
+    </div>
+</div>
+
+<script>
+    function generateCertificate() {
+        const fullName = document.getElementById('fullName').value;
+        const course = document.getElementById('course').value;
+        const completionDate = document.getElementById('completionDate').value;
+
+        document.getElementById('outputName').innerText = fullName;
+        document.getElementById('outputCourse').innerText = course;
+        document.getElementById('outputDate').innerText = completionDate;
+
+        document.getElementById('certificateOutput').style.display = 'block';
+    }
+
+    document.getElementById('downloadBtn').addEventListener('click', function () {
+        const certificateContent = document.getElementById('certificateOutput').innerHTML;
+        const blob = new Blob([certificateContent], { type: 'text/html' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'Certificate.html';
+        link.click();
+    });
+</script>
+
+</body>
+</html>

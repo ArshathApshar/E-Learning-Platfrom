@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* height: 100%;   */
+ 
+    background-image: url('courses2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    width: 150px;
+    border: 2px solid saddlebrown;
+    background-color: blanchedalmond;
+    padding: 20px;
+    float: left;
+   
+}
+ul li{
+    padding: 20px;
+    list-style-type: none;
+    
+}
+
+/* #content{
+    margin-top: 100px;
+} */
+.nav2{
+
+    border: 2px solid saddlebrown;
+    background-color: blanchedalmond;
+    font-size: 30px;
+    margin-left: 150px;
+    height: 100px;
+
+
+    /* margin-top: 20px;
+    margin-left: 20px; */
+
+}
+.nav2 ul li{
+    display: inline-block;
+    list-style-type:none;
+   
+}
+.go{
+    margin-left: 50px;
+    font-size: 20px;
+  
+}
+
+/* courses */
+ul li{
+    float: left;
+    padding: 30px;
+}
+/* #courses{
+}
+      */
+#py{
+ 
+    /* box-shadow: 0 4px 30px rgba(221, 220, 220, 0.1); */
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    border: 2px solid powderblue ;
+    margin-top: 120px;
+
+}
+#py:hover{
+    box-shadow: 0px 54px 55px rgba(0,0,0,0.25), 0px -12px 30px rgba(0,0,0,0.12), 0px 4px 6px rgba(0,0,0,0.12), 0px 12px 13px rgba(0,0,0,0.17), 0px -3px 5px rgba(0,0,0,0.09);
+}
+#sq{
+
+    /* box-shadow: 0 4px 30px rgba(221, 220, 220, 0.1); */
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    border: 2px solid powderblue;
+    margin-top: 120px;
+    margin-left: 350;
+}
+#sq:hover{
+    box-shadow: 0px 54px 55px rgba(0,0,0,0.25), 0px -12px 30px rgba(0,0,0,0.12), 0px 4px 6px rgba(0,0,0,0.12), 0px 12px 13px rgba(0,0,0,0.17), 0px -3px 5px rgba(0,0,0,0.09);
+}
+#ht{
+    /* box-shadow: 0 4px 30px rgba(221, 220, 220, 0.1); */
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    border: 2px solid powderblue ;
+    margin-top: 120px;
+    margin-left: 350;
+}
+#ht:hover{
+    box-shadow: 0px 54px 55px rgba(0,0,0,0.25), 0px -12px 30px rgba(0,0,0,0.12), 0px 4px 6px rgba(0,0,0,0.12), 0px 12px 13px rgba(0,0,0,0.17), 0px -3px 5px rgba(0,0,0,0.09);
+
+}
+#cs{
+     box-shadow: 0 4px 30px rgba(221, 220, 220, 0.1);
+     height: 300px;
+     width: 300px;
+     border-radius: 50px;
+    border: 2px solid powderblue ;
+    margin-top: 120px;
+    margin-left: 350;
+    /* font-size: 30px; */
+} 
+#cs:hover{
+    box-shadow: 0px 54px 55px rgba(0,0,0,0.25), 0px -12px 30px rgba(0,0,0,0.12), 0px 4px 6px rgba(0,0,0,0.12), 0px 12px 13px rgba(0,0,0,0.17), 0px -3px 5px rgba(0,0,0,0.09);
+
+}
